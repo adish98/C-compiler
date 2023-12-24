@@ -1,0 +1,13 @@
+MAIN: mov  LENGTH
+LOOP: jmp L1
+prn 
+bne 
+sub @r1 @r5
+bne END
+add @r1 ,@r10
+L1: inc K
+bne LOOP
+END: stop
+STR: .string abcdef"
+LENGTH: .data 6,-9,15,abs
+K: .data 22
